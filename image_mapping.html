@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Mapping Example</title>
+</head>
+<body>
+
+<h2>Sports Image Map</h2>
+<img src="https://thumbs.dreamstime.com/b/football-soccer-ball-basketball-tennis-ball-racket-laid-grass-sunset-closeup-football-basketball-tennis-ball-134430045.jpg"
+     usemap="#image-map"
+     alt="Sports Balls">
+
+<map name="image-map">
+    <area target="_blank"
+          alt="Football"
+          title="Football"
+          href="https://en.wikipedia.org/wiki/Football"
+          coords="264,313,106"
+          shape="circle">
+
+    <area target="_blank"
+          alt="BasketBall"
+          title="BasketBall"
+          href="https://en.wikipedia.org/wiki/Basketball"
+          coords="495,279,114"
+          shape="circle">
+
+    <area target="_blank"
+          alt="Tennis"
+          title="Tennis"
+          href="https://en.wikipedia.org/wiki/Tennis"
+          coords="413,427,786,296,734,473,529,498,521,487,470,486"
+          shape="poly">
+</map>
+
+</body>
+</html>
