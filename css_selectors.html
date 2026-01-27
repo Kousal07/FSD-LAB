@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+
+    <style>
+        p {
+            color: blue;
+        }
+
+        #main {
+            background-color: lightgreen;
+            padding: 20px;
+        }
+        .highlight {
+            color: purple;
+            font-weight: bold;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: blue;
+        }
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div p {
+            background-color: lightgoldenrodyellow;
+        }
+        div > span {
+            color: paleturquoise;
+        }
+        h2 + p {
+            color: darkred;
+        }
+        h3 ~ p {
+            font-style:oblique;
+        }
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            background-color: lightgray;
+        }
+        p::first-letter {
+            font-size: 32px;
+            color: darkgray;
+        }
+
+        p::after {
+            content: " ✔";
+            color: violet;
+        }
+        input[type="text"] {
+            border: 2px solid navy;
+        }
+        a[target="_blank"] {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selectors</h1>
+
+    <div id="main">
+        <h2>Simple Selectors</h2>
+        <p>element selector example.</p>
+        <p class="highlight">class selector.</p>
+    </div>
+
+    <h2>Combinatory Selectors</h2>
+
+    <div>
+        <p>Descendant selector</p>
+        <span>Child selector applied</span>
+    </div>
+
+    <h3>Sibling</h3>
+    <p>Adjacent sibling selector</p>
+    <p>General sibling selector</p>
+
+    <h2>Pseudo-Class Selector</h2>
+    <a href="#">Hover over this link</a><br><br>
+    <input type="text" placeholder="Focus on me">
+
+    <h2>Pseudo-Element Selector</h2>
+    <p>This paragraph shows pseudo-element effects.</p>
+
+    <h2>Attribute Selector</h2>
+    <input type="text" placeholder="Text input"><br><br>
+    <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>
+
+</body>
+</html>
